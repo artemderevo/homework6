@@ -1,12 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        int year = 2016;
-        if (year % 4 == 0 && year % 100 != 0) {
-            System.out.println("Является високосным годом");
-        } else if (year % 100 ==0 && year % 400 ==0) {
-            System.out.println("Является високосным годом");
-        } else {
-            System.out.println("Не является высокосным годом");
+        int deliveryDistance = 95;
+        if (deliveryDistance <= 20) {
+            System.out.println("Потребуется дней: 1");
+        } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
+            System.out.println("Потребуется дней: 2");
+        } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
+            System.out.println("Потребуется дней: 3");
         }
+
     }
 }
